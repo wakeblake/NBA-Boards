@@ -134,10 +134,12 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Redirects user after logout
-
 LOGOUT_REDIRECT_URL = 'home'
 
+LOGIN_URL = 'login'
+
 LOGIN_REDIRECT_URL = 'home'
+
+# Testing email for password change
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
